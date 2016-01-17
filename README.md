@@ -1,8 +1,8 @@
 ## Virtual LAMP Server for Development
 
-Virtual development server built with Vagrant and provisioned with Puppet.
+Creates a Drupal centric Ubuntu LAMP server for development.
 
-Creates an Ubuntu LAMP server.
+Uses VirtualBox to build with Vagrant and provisioned with Puppet.
 
 ----
 
