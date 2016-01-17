@@ -1,5 +1,4 @@
 ## Virtual Development LAMP Server
-----
 
 Virtual development server built with Vagrant and provisioned with Puppet.
 
