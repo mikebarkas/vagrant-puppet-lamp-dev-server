@@ -6,15 +6,15 @@ Creates an Ubuntu LAMP server.
 
 ----
 
-Ubuntu
-Apache2
-MariaDB
-PHP56
-PHP Xdebug
-Webgrind
-PHPUnit
-Composer
-Git
-Vim
-Tmux
-Zsh
+* Ubuntu
+* Apache2
+* MariaDB
+* PHP56
+* PHP Xdebug
+* Webgrind
+* PHPUnit
+* Composer
+* Git
+* Vim
+* Tmux
+* Zsh
