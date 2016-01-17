@@ -13,6 +13,7 @@ Uses VirtualBox to build with Vagrant and provisioned with Puppet.
 * PHP Xdebug
 * Webgrind
 * PHPUnit
+* Drush
 * Composer
 * Git
 * Vim
