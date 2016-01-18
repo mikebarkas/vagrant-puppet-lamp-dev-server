@@ -48,7 +48,7 @@ class apache {
   }
 
   # Placeholder index file.
-  file { '/var/www/index.html' :
+  file { '/vagrant/www/index.html' :
     ensure => directory,
     owner => 'www-data',
     group => 'www-data',
