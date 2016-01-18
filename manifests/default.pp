@@ -7,4 +7,4 @@ include system_update
 include apache
 #include php
 #include mariadb
-include composer
+#include composer
