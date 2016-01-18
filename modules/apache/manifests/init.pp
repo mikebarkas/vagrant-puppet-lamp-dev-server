@@ -47,8 +47,8 @@ class apache {
   # Placeholder index file.
   file { '/var/www/index.html' :
     ensure => directory,
-    owner => 'root',
-    group => 'root',
+    owner => 'www-data',
+    group => 'www-data',
     mode => '0754',
     source => 'puppet:///modules/apache/index.html',
     require => Package['apache2'];
