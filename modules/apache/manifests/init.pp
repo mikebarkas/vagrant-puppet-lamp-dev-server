@@ -16,7 +16,7 @@ class apache {
   file { '/etc/apache2/mods-enabled/rewrite.load':
     ensure => link,
     target => '/etc/apache2/mods-available/rewrite.load',
-    require => Package['apache2']
+    require => Package['apache2'];
   }
 
   # Ensure directory exists for vhost.
@@ -25,22 +25,25 @@ class apache {
     recurse => true,
     purge => true,
     force => true,
-    before => File['/etc/apache2/sites-enabled/vagrant_app'],
-    require => Package['apache2'],
+    before => File['/etc/apache2/sites-enabled/vagrant_app.conf'],
+    require => Package['apache2'];
   }
 
   # Create Vagrant vhost file.
-  file { '/etc/apache2/sites-available/vagrant_app':
+  file { '/etc/apache2/sites-available/vagrant_app.conf':
     ensure => present,
-    source => 'puppet://modules/apache/vagrant_app',
-    require => Package['apache2'],
+    owner => 'root',
+    group => 'www-data',
+    mode => '0770',
+    source => 'puppet:///modules/apache/vagrant_app.conf',
+    require => Package['apache2'];
   }
 
   # Enable the Vagrant vhost.
-  file { '/etc/apache2/sites-enabled/vagrant_app':
+  file { '/etc/apache2/sites-enabled/vagrant_app.conf':
     ensure => link,
-    target => '/etc/apache2/sites-available/vagrant_app',
-    require => File['/etc/apache2/sites-available/vagrant_app'],
+    target => '/etc/apache2/sites-available/vagrant_app.conf',
+    require => File['/etc/apache2/sites-available/vagrant_app.conf'],
     notify => Service['apache2'],
   }
 
