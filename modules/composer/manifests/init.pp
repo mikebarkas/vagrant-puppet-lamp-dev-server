@@ -1,14 +1,16 @@
 class composer() {
 
-  exec { 'curl -s getcomposer.org/installer | php -d detect_unicode=Off' :
-    cwd => 'home/vagrant',
-    creates => 'home/vagrant/composer.phar',
-    require => Package['php5-cli'],
+  exec { 'install composer' :
+    cwd => '/home/vagrant',
+    command => 'curl -s getcomposer.org/installer | php -d detect_unicode=Off',
+    creates => '/home/vagrant/composer.phar',
+    require => Package['Curl'],
   }
 
-  exec { 'mv composer.phar /usr/bin/composer' :
-    cwd => 'home/vagrant',
+  exec { 'move composer' :
+    cwd => '/home/vagrant',
+    command => 'mv composer.phar /usr/bin/composer',
     creates => '/usr/bin/composer',
-    require => Exec['curl -s getcomposer.org/installer | php -d detect_unicode=Off'],
+    require => Exec['install composer'],
   }
 }
