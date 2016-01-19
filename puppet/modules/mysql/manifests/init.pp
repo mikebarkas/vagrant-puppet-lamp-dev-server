@@ -16,6 +16,11 @@ class mysql {
     require => Package['mysql-server'],
   }
 
-  # Mysql config
-  
+  # MySQL root password.
+  exec { 'set mysql password':
+    unless  => 'mysqladmin -uroot -proot status',
+    command => "mysqladmin -uroot password vagrant",
+    path    => ['/bin', '/usr/bin'],
+    require => Service['mysql'];
+  }  
 }
