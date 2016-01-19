@@ -8,4 +8,4 @@ include apache
 include curl
 include composer
 include php
-#include mariadb
+include mysql
