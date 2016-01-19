@@ -5,6 +5,6 @@ Exec { path => [ "/bin/", "/sbin/", "/usr/bin/", "/usr/sbin" ] }
 #
 include system_update
 include apache
-#include php
+include php
 #include mariadb
 #include composer
