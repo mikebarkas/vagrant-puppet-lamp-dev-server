@@ -1,6 +1,7 @@
 class system_update {
   
-  exec { 'apt-get update' :
+  exec { 'system update' :
+    cwd => '/home/vagrant',
     command => 'apt-get update'
   }
 
