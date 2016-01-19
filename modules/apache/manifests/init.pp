@@ -1,5 +1,5 @@
 class apache {
-  
+
   # Apache package.
   package { 'apache2' :
     ensure => present,
