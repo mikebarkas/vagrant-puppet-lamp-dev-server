@@ -4,7 +4,7 @@ class composer() {
     cwd => '/home/vagrant',
     command => 'curl -s getcomposer.org/installer | php -d detect_unicode=Off',
     creates => '/home/vagrant/composer.phar',
-    require => Package['Curl'],
+    require => Class['Curl'],
   }
 
   exec { 'move composer' :
