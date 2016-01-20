@@ -6,16 +6,16 @@ Uses VirtualBox to build with Vagrant and provisioned with Puppet.
 
 ----
 
-* Ubuntu
+* Ubuntu 14.04 _Trusty_
 * Apache2
 * MySQL
 * PHP5
 * PHP Xdebug _(todo)_
 * Webgrind  _(todo)_
 * PHPUnit  _(todo)_
-* Drush
+* Drush _(todo)_
 * Composer
 * Git
 * Vim  _(todo)_
-* Tmux  _(todo)_
-* Zsh  _(todo)_
+* Tmux
+* Zsh
