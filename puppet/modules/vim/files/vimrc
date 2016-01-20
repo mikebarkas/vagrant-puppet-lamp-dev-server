@@ -1,0 +1,100 @@
+" ==============================================================================
+"
+" File: .vimrc
+" Description: Vim configuration.
+"
+" ==============================================================================
+"
+"
+" ==============================================================================
+" Configuration
+" ==============================================================================
+set nocompatible
+filetype off
+
+set t_Co=256                           " Set terminal color to 256.
+syntax on                              " Syntax highlighting.
+set number                             " Line numbering.
+set virtualedit=all                    " Allow virtual editing.
+set title                              " Set title.
+set visualbell                         " Disable beep.
+set t_vb=                              " Set screen flash to 0.
+set noswapfile                         " Do not create a swapfile.
+set cursorline                         " Display cursor line.
+set mouse=a                            " Mouse availablility.
+set background=dark                    " Set color scope.
+set ch=2
+set backspace=2
+set scrolloff=4                        " Scroll offset.
+
+
+" ==============================================================================
+" Binds
+" ==============================================================================
+" Saving and quitting.
+imap jj <Esc>
+imap kj <Esc>:w<Cr>
+nmap <S-u> :redo<Cr>
+
+" Windows.
+nmap <silent> <leader>h :wincmd h<Cr>
+nmap <silent> <leader>j :wincmd j<Cr>
+nmap <silent> <leader>k :wincmd k<Cr>
+nmap <silent> <leader>l :wincmd l<Cr>
+
+nmap <leader><S-h> :wincmd <S-h><Cr>
+nmap <leader><S-j> :wincmd <S-j><Cr>
+nmap <leader><S-k> :wincmd <S-k><Cr>
+nmap <leader><S-l> :wincmd <S-l><Cr>
+
+" Search.
+nnoremap n nzzzv
+nnoremap N nzzzv
+nnoremap <silent> <CR> :noh<CR><CR>
+
+
+" ==============================================================================
+" Search and Replace
+" ==============================================================================
+set incsearch                          " Show match as search is typed.
+set ignorecase                         " Isensitive case search.
+set hlsearch                           " Highlight search patterns.
+set wrapscan                           " Wrap to top when searching.
+set cpoptions+=$                       " Show end of edit change.
+
+
+" ==============================================================================
+" Folding
+" ==============================================================================
+set foldenable                         " Enable folding.
+set foldlevelstart=2                   " Fold level when opening buffer.
+set foldnestmax=4                      " Max nested fold level.
+set foldmethod=indent                  " Fold on indent level.
+
+
+" =============================================================================
+" Tabs and Panes
+" =============================================================================
+set showtabline=2
+set tabstop=2
+set shiftwidth=2                       " Characters for indentation.
+set softtabstop=2
+set expandtab                          " Insert spaces not tabs.
+set autoindent
+set splitright
+set splitbelow
+
+
+" =============================================================================
+" Help
+" =============================================================================
+autocmd FileType help wincmd L
+
+
+" ==============================================================================
+" Opening file on line.
+" ==============================================================================
+if has("autocmd")
+  au BufReadPost * if line("'\"") > 0 && line("'\"") <= line("$")
+    \| exe "normal! g'\"" | endif
+endif

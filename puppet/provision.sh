@@ -8,7 +8,6 @@ apt-get update -y
 #
 # Install basic utilities.
 #
-apt-get install -y -q vim
 apt-get install -y -q unzip zip
 apt-get install -y -q git
 

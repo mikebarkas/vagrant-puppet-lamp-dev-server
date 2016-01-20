@@ -16,6 +16,6 @@ Uses VirtualBox to build with Vagrant and provisioned with Puppet.
 * Drush _(todo)_
 * Composer
 * Git
-* Vim  _(todo)_
+* Vim
 * Tmux
 * Zsh

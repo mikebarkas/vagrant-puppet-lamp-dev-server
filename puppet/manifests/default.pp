@@ -10,4 +10,5 @@ include composer
 include php
 include mysql
 include tmux
+include vim
 #include drush
