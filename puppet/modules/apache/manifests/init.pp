@@ -48,12 +48,12 @@ class apache {
   }
 
   # Placeholder index file.
-  file { '/vagrant/www/index.html' :
+  file { '/vagrant/www/index.php' :
     ensure => directory,
     owner => 'www-data',
     group => 'www-data',
     mode => '0754',
-    source => 'puppet:///modules/apache/index.html',
+    source => 'puppet:///modules/apache/index.php',
     require => Package['apache2'];
   }
 }

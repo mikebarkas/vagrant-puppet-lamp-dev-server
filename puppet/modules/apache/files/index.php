@@ -25,6 +25,7 @@
 <div>
   <h1>Vagrant Virtual Machine</h1>
   <p>This machine was built with Vagrant and provisioned with Puppet.</p>
+  <?php phpinfo(); ?>
 </div>
 </body>
 </html>

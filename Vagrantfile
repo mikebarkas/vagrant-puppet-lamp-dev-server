@@ -1,5 +1,4 @@
 # -*- mode: ruby -*-
-# vi: set ft=ruby :
 
 # Vagrantfile API/syntax version.
 VAGRANTFILE_API_VERSION = "2"
@@ -31,7 +30,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   #
   # Sync folder.
   #
-  config.vm.synced_folder "www/", "/vagrant/www/", :owner => "www-data"
+  config.vm.synced_folder "www/", "/var/www/", :owner => "www-data"
 
   #
   # VM config.
