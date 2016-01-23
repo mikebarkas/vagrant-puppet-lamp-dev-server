@@ -11,9 +11,6 @@ Uses VirtualBox to build with Vagrant and provisioned with Puppet.
 * MySQL
 * PHP5
 * PHP Xdebug
-* Webgrind  _(todo)_
-* PHPUnit  _(todo)_
-* Drush _(todo)_
 * Composer
 * Git
 * Vim
@@ -23,5 +20,7 @@ Uses VirtualBox to build with Vagrant and provisioned with Puppet.
 
 ### Todo
 
-- [ ] Webgrind
-- [ ] PHPUnit
+- [ ] Install Webgrind
+- [ ] Install PHPUnit
+- [ ] Install Drush
+- [ ] setup MySQL database
