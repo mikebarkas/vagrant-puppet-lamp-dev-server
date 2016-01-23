@@ -1,6 +1,6 @@
 ## Virtual LAMP Server for Development
 
-Creates a Drupal centric Ubuntu LAMP server for development.
+Creates an Ubuntu LAMP server for development.
 
 Uses VirtualBox to build with Vagrant and provisioned with Puppet.
 
@@ -10,7 +10,7 @@ Uses VirtualBox to build with Vagrant and provisioned with Puppet.
 * Apache2
 * MySQL
 * PHP5
-* PHP Xdebug _(todo)_
+* PHP Xdebug
 * Webgrind  _(todo)_
 * PHPUnit  _(todo)_
 * Drush _(todo)_
