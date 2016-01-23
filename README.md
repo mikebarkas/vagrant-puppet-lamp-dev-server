@@ -23,4 +23,3 @@ Uses VirtualBox to build with Vagrant and provisioned with Puppet.
 - [ ] Install Webgrind
 - [ ] Install PHPUnit
 - [ ] Install Drush
-- [ ] setup MySQL database
