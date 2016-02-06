@@ -19,7 +19,7 @@ class php {
     ensure => present,
     owner => 'root',
     group => 'root',
-    mode => '0777',
+    mode => '0775',
     source => 'puppet:///modules/php/vagrant-php.ini',
     require => Package['php5'],
     notify => Service['apache2'],
