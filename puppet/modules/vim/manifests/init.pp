@@ -6,7 +6,7 @@ class vim {
     require => Class['system_update'];
   }
 
-  # Load tmux config file.
+  # Load Vim config file.
   file { '/home/vagrant/.vimrc':
     ensure => present,
     owner => 'vagrant',
