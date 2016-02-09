@@ -47,13 +47,13 @@ class apache {
     notify => Service['apache2'],
   }
 
-  # Placeholder index file.
-  file { '/vagrant/www/index.php' :
+  # Apache PHP system test file.
+  file { '/vagrant/www/phpinfo.php' :
     ensure => directory,
     owner => 'www-data',
     group => 'www-data',
     mode => '0754',
-    source => 'puppet:///modules/apache/index.php',
+    source => 'puppet:///modules/apache/phpinfo.php',
     require => Package['apache2'];
   }
 }
