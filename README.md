@@ -2,7 +2,7 @@
 
 Creates an Ubuntu LAMP server for development.
 
-Uses VirtualBox to build with Vagrant and provisioned with Puppet.
+Uses VirtualBox to build with Vagrant and provisioned with Puppet and a little shell.
 
 ----
 
@@ -23,3 +23,7 @@ Uses VirtualBox to build with Vagrant and provisioned with Puppet.
 
 - [ ] Install Webgrind
 - [ ] Install PHPUnit
+
+----
+
+Setup includes a _drupal_ database with a _vagrant_ MySQL user.
