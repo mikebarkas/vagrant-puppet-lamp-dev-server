@@ -16,10 +16,10 @@ Uses VirtualBox to build with Vagrant and provisioned with Puppet.
 * Vim
 * Tmux
 * Zsh
+* Drush
 
 
 ### Todo
 
 - [ ] Install Webgrind
 - [ ] Install PHPUnit
-- [ ] Install Drush
