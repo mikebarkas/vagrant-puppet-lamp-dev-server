@@ -1,4 +1,4 @@
-Exec { path => [ "/bin/", "/sbin/", "/usr/bin/", "/usr/sbin" ] }
+Exec { path => [ "/bin/", "/sbin/", "/usr/bin/", "/usr/sbin", "/usr/local/bin" ] }
 
 #
 # Include Modules.
@@ -11,4 +11,4 @@ include php
 include mysql
 include tmux
 include vim
-#include drush
+include drush
