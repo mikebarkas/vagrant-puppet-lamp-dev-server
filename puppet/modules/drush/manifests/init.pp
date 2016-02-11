@@ -6,5 +6,10 @@ class drush {
     require => Class['composer'],
   }
 
+  exec { 'alias drush' :
+    command => 'echo "alias drush=\"~/.composer/vendor/drush/drush/drush\"" >> /home/vagrant/.zshrc',
+    require => Exec['install drush'],
+  }
+
 }
 
