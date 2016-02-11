@@ -1,10 +1,8 @@
 class composer() {
 
   exec { 'install composer' :
-    cwd => '/home/vagrant',
-    user => vagrant,
-    command => 'curl -sS https://getcomposer.org/installer | sudo php -- --install-dir=/usr/local/bin --filename=composer',
-    creates => '/home/vagrant/composer.phar',
+    command => 'curl -sS https://getcomposer.org/installer | php && sudo mv composer.phar /usr/local/bin/composer',
+    environment => 'COMPOSER_HOME=/home/vagrant/',
     require => Class['Curl'],
   }
 
