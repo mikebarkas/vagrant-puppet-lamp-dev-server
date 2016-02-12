@@ -11,6 +11,7 @@ Uses VirtualBox to build with Vagrant and provisioned with Puppet and a little s
 * MySQL
 * PHP5
 * PHP Xdebug
+* PHPUnit
 * Composer
 * Git
 * Vim
@@ -22,8 +23,10 @@ Uses VirtualBox to build with Vagrant and provisioned with Puppet and a little s
 ### Todo
 
 - [ ] Install Webgrind
-- [ ] Install PHPUnit
 
 ----
+#### Setup
+1. Create a _vagrant sync_ directory called: `www`
+2. Run: `vagrant up`
 
-Setup includes a _drupal_ database with a _vagrant_ MySQL user.
+Server includes a _drupal_ database with a _vagrant_ MySQL user.
