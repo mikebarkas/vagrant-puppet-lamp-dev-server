@@ -9,10 +9,10 @@
   }
 
   div {
-    width: 80%;
+    width: 95%;
     background: #ffffff;
     margin:50px auto 0;
-    padding: 20px;
+    padding: 20px 10px;
     min-height: 400px;
     border: 1px solid #cccccc;
     border-radius: 3px;
