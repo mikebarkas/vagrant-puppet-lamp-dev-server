@@ -1,6 +1,12 @@
 #!/bin/sh
 
 #
+# Add php5.6 repository.
+#
+sudo apt-get install python-software-properties -y
+sudo add-apt-repository ppa:ondrej/php5-5.6
+
+#
 # Update system.
 #
 apt-get update -y
