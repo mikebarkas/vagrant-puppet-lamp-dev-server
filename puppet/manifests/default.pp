@@ -12,3 +12,4 @@ include mysql
 include tmux
 include vim
 include drush
+include phpunit
